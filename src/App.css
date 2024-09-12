@@ -1,0 +1,96 @@
+.frame-num {
+  text-align: center;
+
+}
+
+.frame-image {
+  margin: 20px auto;
+  text-align: center;
+  border: 10px solid black;
+  border-radius: 10px;
+  height: 400px;
+  width: 900px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+.controllers {
+  display: flex;
+  align-items: center;
+  width: 900px;
+  gap: 30px;
+  margin: 20px auto;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.start-button {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(84, 129, 17);
+}
+
+.start-button:hover {
+  background-color: rgb(70, 109, 14);
+  cursor: pointer;
+}
+
+.start-button.start {
+  background-color: green;
+  /* Color when in "Start" state */
+}
+
+.start-button.stop {
+  background-color: red;
+  /* Color when in "Stop" state */
+}
+
+.faces-container {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0px 20px;
+  display: grid;
+  gap: 0px 30px;
+  width: 1000px;
+  margin: 0px auto;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.face {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.face.green {
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+}
+
+.face.orange {
+  font-size: 20px;
+  font-weight: bold;
+  color: orange;
+}
+
+.face.red {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
